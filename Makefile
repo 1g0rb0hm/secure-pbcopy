@@ -5,7 +5,7 @@ all: secure-pbcopy
 .SUFFIXES:
 .SUFFIXES: .c .o
 
-.PHONY: all install clean
+.PHONY: all install
 
 CFLAGS = -g
 ALL_CFLAGS = -framework AppKit $(CFLAGS)
@@ -16,7 +16,7 @@ secure-pbcopy: main.m
 INSTALL = install
 INSTALL_PROGRAM = $(INSTALL)
 
-prefix = /usr/local
+prefix = $(HOME)/Local
 exec_prefix = $(prefix)
 bindir = $(exec_prefix)/bin
 

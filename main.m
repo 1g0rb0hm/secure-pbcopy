@@ -7,5 +7,6 @@ int main() {
 
     [[NSPasteboard generalPasteboard] clearContents];
     [[NSPasteboard generalPasteboard] setString:text forType:NSPasteboardTypeString];
+    // see: @http://nspasteboard.org
     [[NSPasteboard generalPasteboard] setString:@"" forType:@"org.nspasteboard.ConcealedType"];
 }
